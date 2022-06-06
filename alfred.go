@@ -26,10 +26,6 @@ func runWithAlfred(wf *aw.Workflow) {
 	var targetTime time.Time
 	if len(args) == 0 {
 		targetTime = time.Now()
-		logrus.Infof("Unix:%d", targetTime.Unix())
-		logrus.Infof("UnixMicro:%d", targetTime.UnixMicro())
-		logrus.Infof("UnixNano:%d", targetTime.UnixNano())
-		logrus.Infof("UnixMilli:%d", targetTime.UnixMilli())
 		item := wf.NewItem("当前时间")
 		//timeFormated := now.Format("2006-01-02 15:04:05")
 		timeFormated := targetTime.Format("2006-01-02 15:04:05")

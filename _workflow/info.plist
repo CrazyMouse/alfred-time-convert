@@ -60,7 +60,12 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./alfred-time-convert "$@"</string>
+				<string>if [[ $(uname -p) == 'arm' ]]
+then
+  ./alfred-time-convert_arm "$@"
+else
+  ./alfred-time-convert "$@"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>

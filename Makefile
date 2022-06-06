@@ -9,6 +9,7 @@ dist: build
 .PHONY: build
 build:
 	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o build/$(PROJECT) -ldflags="-s -w"
+	CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -o build/$(PROJECT)_arm -ldflags="-s -w"
 	cp _workflow/* build/
 
 .PHONY: clean
