@@ -1,36 +1,26 @@
 # alfred-time-convert
 
-Convert time between Second Millisecond or time Formatted String
+时间格式相互转换工具，利用Alfred快速进行时间格式转换。
 
 ## Features
-// todo change comment
-- Search Chrome history (title and URL)
-- Support another Chrome profile
+- 默认显示当前时间的格式化字符串以及秒和毫秒
+- 对于传入参数 **2022-09-12 12:01:22** 显示秒和毫秒 
+- 传入秒显示格式化时间串
+- 传入毫秒显示格式化时间串
+- 针对于Intel芯片和ARM芯片进行了适配
 
 ## Installation
 
-Clone and `make dist` or just download [binary releases](https://github.com/pasela/alfred-chrome-history/releases).
+Clone and `make dist` 
 
-```sh
-git clone https://github.com/pasela/alfred-chrome-history.git
-cd alfred-chrome-history
-make dist
-open alfred-chrome-history.alfredworkflow
-```
 
 ## Usage
 
 in Alfred:
 
 ```
-ch {query}
+tt {query}
 ```
-
-## Use another Chrome profile
-
-1. Open workflow `Chrome History` in Alfred Workflows tab.
-2. Open Workflow Configuration dialog by upper right side button.
-3. Set `CHROME_PROFILE` variable with your Chrome profile directory name or path such as `Profile 1`.
 
 ## License
 
@@ -38,4 +28,4 @@ MIT
 
 ## Author
 
-Yuki (a.k.a. pasela)
+CrazyMouse
