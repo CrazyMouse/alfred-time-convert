@@ -9,6 +9,12 @@
 - 传入秒显示格式化时间串
 - 传入毫秒显示格式化时间串
 - 针对于Intel芯片和ARM芯片进行了适配
+- 回车结果会拷贝到剪切板
+
+![img.png](img.png)
+![img_1.png](img_1.png)
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 
 ## Installation
 
