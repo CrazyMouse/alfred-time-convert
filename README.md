@@ -1,6 +1,7 @@
 # alfred-time-convert
 
 时间格式相互转换工具，利用Alfred快速进行时间格式转换。
+代码比较简单粗暴，没有进行任何优化，只是为了方便使用。
 
 ## Features
 - 默认显示当前时间的格式化字符串以及秒和毫秒
@@ -12,6 +13,8 @@
 ## Installation
 
 Clone and `make dist` 
+然后就是双击安装了
+或者从 release 下载
 
 
 ## Usage

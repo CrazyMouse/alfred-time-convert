@@ -27,10 +27,10 @@ func runWithAlfred(wf *aw.Workflow) {
 	if len(args) == 0 {
 		targetTime = time.Now()
 		item := wf.NewItem("当前时间")
-		//timeFormated := now.Format("2006-01-02 15:04:05")
-		timeFormated := targetTime.Format("2006-01-02 15:04:05")
-		item.Subtitle(timeFormated)
-		item.Arg(timeFormated)
+		//timeFormatted := now.Format("2006-01-02 15:04:05")
+		timeFormatted := targetTime.Format("2006-01-02 15:04:05")
+		item.Subtitle(timeFormatted)
+		item.Arg(timeFormatted)
 		item.Valid(true)
 		item1 := wf.NewItem("10位 精确到秒")
 		secondFormat := strconv.FormatInt(targetTime.Unix(), 10)
@@ -83,20 +83,6 @@ func runWithAlfred(wf *aw.Workflow) {
 			}
 
 		}
-		//atoi, err := strconv.Atoi(args[0])
-		//if err != nil {
-		//	logrus.Warn("input error")
-		//	item := wf.NewItem("error")
-		//	item.Arg("data error")
-		//	item.Valid(true)
-		//} else {
-		//	logrus.Info("convert success")
-		//	targetTime := time.UnixMilli(int64(atoi * 1000))
-		//	item := wf.NewItem("10位 精确到秒")
-		//	item.Subtitle(targetTime.Format("2006-01-02 15:04:05"))
-		//	item.Arg(targetTime.Format("2006-01-02 15:04:05"))
-		//	item.Valid(true)
-		//}
 	}
 	wf.SendFeedback()
 }
